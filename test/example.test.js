@@ -1,16 +1,18 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import { dropBoxMath } from '../mathutils.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
+test('add', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const input1 = 1;
+    const input2 = 2;
+    const operator = 'add';
+    const expected = 3;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = false;
+    const actual = dropBoxMath(operator, input1, input2)
 
     //Expect
     // Make assertions about what is expected versus the actual result
